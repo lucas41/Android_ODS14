@@ -4,67 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:background="@drawable/_a0c0d74c87a71a9f7f20f7d0194e00c"
     tools:context=".TelaCadastroProjetos">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="367dp"
+        android:layout_height="110dp"
         android:ems="10"
-        android:gravity="center"
-        android:hint="Cadastro de Projeto"
-        android:inputType="textPersonName"
-        android:textColor="@color/colorPrimaryCadastro"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/Nomeprojeto"
+        android:gravity="start|top"
+        android:hint="Possui um projeto de conservação ambiental da vida Maritima? faça o cadastro agora mesmo em nossa plataforma e comece a divulgar "
+        android:inputType="textMultiLine"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
-        tools:layout_editor_absoluteX="32dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="420dp"
-        android:layout_height="56dp"
-        android:ems="10"
-        android:hint="Cidadeprojeto"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/spinnerEstado"
-        app:layout_constraintTop_toBottomOf="@+id/Nomeprojeto"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.249" />
 
     <Spinner
         android:id="@+id/spinnerEstado"
         android:layout_width="104dp"
         android:layout_height="42dp"
         android:autofillHints="Estadoprojeto"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="add"
         android:entries="@array/estados"
-        app:layout_constraintBottom_toTopOf="@+id/Descricao"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-        tools:layout_editor_absoluteX="7dp" />
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/Nomeprojeto"
-        android:layout_width="421dp"
-        android:layout_height="52dp"
-        android:hint="Nome do Projeto"
-        android:textColor="@color/colorAccentCadastro"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
-    <EditText
-        android:id="@+id/Descricao"
-        android:layout_width="406dp"
-        android:layout_height="51dp"
-        android:ems="10"
-        android:hint="Descrição"
-        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="415dp"
+        android:layout_height="62dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Cadastro de Projeto"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="331dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Cidadeprojeto"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccentCadastro"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.564" />
@@ -76,9 +78,38 @@
         android:text="Cadastrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.868" />
+        app:layout_constraintVertical_bias="0.896" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Nomeprojeto"
+        android:layout_width="329dp"
+        android:layout_height="62dp"
+        android:hint="Nome do Projeto"
+        android:textColor="@color/colorAccentCadastro"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.464" />
+
+    <EditText
+        android:id="@+id/Descricao"
+        android:layout_width="186dp"
+        android:layout_height="119dp"
+        android:ems="10"
+        android:hint="Descrição"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorAccentCadastro"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.748" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
